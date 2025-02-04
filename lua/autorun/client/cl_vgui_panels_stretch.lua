@@ -7,7 +7,7 @@ concommand.Add("vgui_panels_stretch", function()
     if IsValid(frame) then
         frame:Close()
     else
-        frame = vguihandler.GenerateFrame(950, 500, "vgui_panels_stretch")
+        frame = vguihandler.GenerateFrame(950, 1000, "vgui_panels_stretch")
 
         GAMEMODE.testing_vgui_panels_stretch = frame
 
@@ -19,8 +19,9 @@ concommand.Add("vgui_panels_stretch", function()
         local box1 = layout:Add("TTT2:DPanel")
         box1:SetSize(300, 50)
             :SetText(
-                "testing text that is way too long to fit here and should extend the size of this panel"
+                "1 (top) testing text that is way too long to fit here and should extend the horizontal size of this panel"
             )
+            :SetFont("DermaTTT2Button")
             :SetTextAlign(TEXT_ALIGN_LEFT, TEXT_ALIGN_TOP)
             :SetIcon(material, true, true, 30)
             :SetOutline(1)
@@ -28,17 +29,132 @@ concommand.Add("vgui_panels_stretch", function()
             :SetFitToContentX(true)
 
         local box2 = layout:Add("TTT2:DPanel")
-        box2:SetSize(200, 50)
+        box2:SetSize(300, 50)
             :SetText(
-                "testing text that is way too long to fit here and should extend the size of this panel"
+                "2 (center) testing text that is way too long to fit here and should extend the horizontal size of this panel"
             )
+            :SetFont("DermaTTT2Button")
+            :SetTextAlign(TEXT_ALIGN_LEFT, TEXT_ALIGN_CENTER)
+            :SetIcon(material, true, true, 30)
+            :SetOutline(1)
+            :EnableCornerRadius(true)
+            :SetFitToContentX(true)
+
+        local box3 = layout:Add("TTT2:DPanel")
+        box3:SetSize(200, 50)
+            :SetText(
+                "3 testing text that is way too long to fit here and should extend the size of this panel"
+            )
+            :SetFont("DermaTTT2Button")
             :SetDescription(
-                "This is the description of the panel. It should automatically word wrap and extend the size of the panel until everything fits. Let's hope it works!"
+                "(align: left, top) This is the description of the panel. It should automatically word wrap and extend the size of the panel until everything fits. Let's hope it works!"
             )
+            :SetPadding(10)
+            :SetTextAlign(TEXT_ALIGN_LEFT, TEXT_ALIGN_TOP)
+            :SetIcon(material, true, true, 30)
+            :SetOutline(1)
+            :SetOutlineColor(COLOR_GREEN)
+            :SetFitToContentY(true)
+
+        local box4 = layout:Add("TTT2:DPanel")
+        box4:SetSize(200, 50)
+            :SetText(
+                "4 testing text that is way too long to fit here and should extend the size of this panel"
+            )
+            :SetFont("DermaTTT2Button")
+            :SetDescription(
+                "(align: left, center) This is the description of the panel. It should automatically word wrap and extend the size of the panel until everything fits. Let's hope it works!"
+            )
+            :SetPadding(10)
             :SetTextAlign(TEXT_ALIGN_LEFT, TEXT_ALIGN_CENTER)
             :SetIcon(material, true, true, 30)
             :SetOutline(1)
             :SetOutlineColor(COLOR_GREEN)
             :SetFitToContentY(true)
+
+        local box5 = layout:Add("TTT2:DPanel")
+        box5:SetSize(200, 50)
+            :SetText(
+                "5 testing text that is way too long to fit here and should extend the size of this panel"
+            )
+            :SetFont("DermaTTT2Button")
+            :SetDescription(
+                "(align: right, bottom) This is the description of the panel. It should automatically word wrap and extend the size of the panel until everything fits. Let's hope it works!"
+            )
+            :SetPadding(10)
+            :SetTextAlign(TEXT_ALIGN_RIGHT, TEXT_ALIGN_BOTTOM)
+            :SetIcon(material, true, true, 30)
+            :SetOutline(1)
+            :SetOutlineColor(COLOR_GREEN)
+            :SetFitToContentY(true)
+
+        local box6 = layout:Add("TTT2:DPanel")
+        box6:SetSize(200, 50)
+            :SetText(
+                "6 testing text that is way too long to fit here and should extend the size of this panel"
+            )
+            :SetFont("DermaTTT2Button")
+            :SetDescription(
+                "(align: right, bottom + hor stretch) This is the description of the panel. It should automatically word wrap and extend the size of the panel until everything fits. Let's hope it works!"
+            )
+            :SetPadding(10)
+            :SetTextAlign(TEXT_ALIGN_RIGHT, TEXT_ALIGN_BOTTOM)
+            :SetIcon(material, true, true, 30)
+            :SetOutline(1)
+            :SetOutlineColor(COLOR_BLUE)
+            :SetFitToContentX(true)
+            :SetFitToContentY(true)
+
+        local box7 = layout:Add("TTT2:DPanel")
+        box7:SetSize(200, 150)
+            :SetText(
+                "7 testing text that is way too long to fit here and should extend the size of this panel"
+            )
+            :SetFont("DermaTTT2Button")
+            :SetDescription(
+                "(align: right, bottom + hor stretch, fixed height) This is the description of the panel. It should automatically word wrap and extend the size of the panel until everything fits. Let's hope it works!"
+            )
+            :SetPadding(10)
+            :SetTextAlign(TEXT_ALIGN_RIGHT, TEXT_ALIGN_BOTTOM)
+            :SetIcon(material, true, true, 30)
+            :SetOutline(1)
+            :SetOutlineColor(COLOR_RED)
+            :SetFitToContentX(true)
+
+        local box8 = layout:Add("TTT2:DPanel")
+        box8:SetSize(200, 150)
+            :SetText(
+                "8 testing text that is way too long to fit here and should extend the size of this panel"
+            )
+            :SetFont("DermaTTT2Button")
+            :SetDescription(
+                "(align: center, center + hor stretch, fixed height) This is the description of the panel. It should automatically word wrap and extend the size of the panel until everything fits. Let's hope it works!"
+            )
+            :SetPadding(10)
+            :SetTextAlign(TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
+            :SetIcon(material, true, true, 30)
+            :SetOutline(1)
+            :SetOutlineColor(COLOR_RED)
+            :SetFitToContentX(true)
+
+        local box9 = layout:Add("TTT2:DPanel")
+        box9:SetSize(200, 150)
+            :SetText(
+                "9 testing text that is way too long to fit here and should extend the size of this panel"
+            )
+            :SetFont("DermaTTT2Button")
+            :SetDescription(
+                "(align: left, top + hor stretch, fixed height, bigger icon) This is the description of the panel. It should automatically word wrap and extend the size of the panel until everything fits. Let's hope it works!"
+            )
+            :SetPadding(10)
+            :SetTextAlign(TEXT_ALIGN_LEFT, TEXT_ALIGN_TOP)
+            :SetIcon(material, true, true, 75)
+            :SetOutline(1)
+            :SetOutlineColor(COLOR_RED)
+            :SetFitToContentX(true)
+
+        timer.Simple(0.1, function()
+            layout:InvalidateLayout(true)
+        end)
     end
 end)

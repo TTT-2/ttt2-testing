@@ -20,7 +20,7 @@ concommand.Add("vgui_buttons", function()
         box1:SetSize(300, 50)
             :SetText("testing text")
             :SetIcon(material, DRAW_SHADOW_ENABLED, DRAW_ICON_SIMPLE, 30)
-            :SetOutline(0, 0, 0, 2)
+            :SetOutline(0, 0, 0, vskin.GetBorderSize())
 
         local box2 = layout:Add("TTT2:DButton")
         box2:SetSize(300, 50)
@@ -38,11 +38,14 @@ concommand.Add("vgui_buttons", function()
             :SetText(
                 "testing text that is way too long to fit here and should be automatically shortened"
             )
-            :SetOutline(0, 0, 0, 2)
+            :SetOutline(0, 0, 0, vskin.GetBorderSize())
             :EnableCornerRadius(true)
 
         local box5 = layout:Add("TTT2:DButton")
-        box5:SetSize(300, 50):SetText("testing text"):SetOutline(1):EnableCornerRadius(true)
+        box5:SetSize(300, 50)
+            :SetText("testing text")
+            :SetOutline(1, 1, 1, vskin.GetBorderSize())
+            :EnableCornerRadius(true)
 
         local box6 = layout:Add("TTT2:DButton")
         box6:SetSize(300, 50):SetText("testing text"):EnableCornerRadius(true)
