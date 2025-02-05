@@ -30,7 +30,7 @@ concommand.Add("vgui_panels_more", function()
         box2:SetSize(300, 100)
             :SetTextAlign(TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
             :SetDescription(
-                "(align: left, top) This is the description of the panel. It should automatically word wrap and extend the size of the panel until everything fits. Let's hope it works!"
+                "(align: center, center) This is the description of the panel. It should automatically word wrap and extend the size of the panel until everything fits. Let's hope it works!"
             )
             :SetPadding(10)
             :SetOutline(4, 0)
