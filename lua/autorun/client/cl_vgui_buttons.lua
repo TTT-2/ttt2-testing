@@ -21,6 +21,7 @@ concommand.Add("vgui_buttons", function()
             :SetText("testing text")
             :SetIcon(material, DRAW_SHADOW_ENABLED, DRAW_ICON_SIMPLE, 30)
             :SetOutline(0, 0, 0, vskin.GetBorderSize())
+            :SetKeyBinding("+menu_context")
 
         local box2 = layout:Add("TTT2:DButton")
         box2:SetSize(300, 50)
