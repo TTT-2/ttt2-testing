@@ -17,38 +17,37 @@ concommand.Add("vgui_panels_more", function()
         layout:SetSpaceY(10)
 
         local box1 = layout:Add("TTT2:DPanel")
-        box1:SetSize(300, 100)
+        box1:SetSize(300, 150)
             :SetTextAlign(TEXT_ALIGN_LEFT, TEXT_ALIGN_TOP)
             :SetDescription(
-                "(align: left, top) This is the description of the panel. It should automatically word wrap and extend the size of the panel until everything fits. Let's hope it works!"
+                "(align: left, top + fixed size) This is the description of the panel. It should automatically word wrap and extend the size of the panel until everything fits. Let's hope it works!"
             )
             :SetPadding(10)
             :SetOutline(4, 0)
             :EnableCornerRadius(true)
 
-            local box2 = layout:Add("TTT2:DPanel")
-        box2:SetSize(300, 100)
+        local box2 = layout:Add("TTT2:DPanel")
+        box2:SetSize(300, 150)
             :SetTextAlign(TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
             :SetDescription(
-                "(align: center, center) This is the description of the panel. It should automatically word wrap and extend the size of the panel until everything fits. Let's hope it works!"
+                "(align: center, center + fixed size) This is the description of the panel. It should automatically word wrap and extend the size of the panel until everything fits. Let's hope it works!"
             )
             :SetPadding(10)
             :SetOutline(4, 0)
             :EnableCornerRadius(true)
 
         local box3 = layout:Add("TTT2:DPanel")
-        box3:
+        box3:SetSize(300, 150)
+            :SetTextAlign(TEXT_ALIGN_RIGHT, TEXT_ALIGN_BOTTOM)
+            :SetDescription(
+                "(align: right, bottom + fixed size) This is the description of the panel. It should automatically word wrap and extend the size of the panel until everything fits. Let's hope it works!"
+            )
             :SetPadding(10)
-            :SetTextAlign(TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
-            :SetIcon(material, true, true, 30)
-            :SetOutline(1)
-            :SetOutlineColor(COLOR_GREEN)
-            :SetFitToContentX(true)
-            :SetFitToContentY(true)
+            :SetOutline(4, 0)
+            :EnableCornerRadius(true)
 
         local box4 = layout:Add("TTT2:DPanel")
-        box4:
-            :SetPadding(20, 5)
+        box4:SetPadding(10)
             :SetTextAlign(TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
             :SetIcon(material, true, true, 30)
             :SetOutline(1)
@@ -57,8 +56,16 @@ concommand.Add("vgui_panels_more", function()
             :SetFitToContentY(true)
 
         local box5 = layout:Add("TTT2:DPanel")
-        box5:
-            :SetPadding(20, 5, 0, 40)
+        box5:SetPadding(20, 5)
+            :SetTextAlign(TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
+            :SetIcon(material, true, true, 30)
+            :SetOutline(1)
+            :SetOutlineColor(COLOR_GREEN)
+            :SetFitToContentX(true)
+            :SetFitToContentY(true)
+
+        local box6 = layout:Add("TTT2:DPanel")
+        box6:SetPadding(20, 5, 0, 40)
             :SetTextAlign(TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
             :SetIcon(material, true, true, 30)
             :SetOutline(1)

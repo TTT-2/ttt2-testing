@@ -41,9 +41,21 @@ concommand.Add("vgui_panels_stretch", function()
             :SetFitToContentX(true)
 
         local box3 = layout:Add("TTT2:DPanel")
-        box3:SetSize(200, 50)
+        box3:SetSize(300, 50)
             :SetText(
-                "3 testing text that is way too long to fit here and should extend the size of this panel"
+                "3 (bottom) testing text that is way too long to fit here and should extend the horizontal size of this panel"
+            )
+            :SetFont("DermaTTT2Button")
+            :SetTextAlign(TEXT_ALIGN_LEFT, TEXT_ALIGN_BOTTOM)
+            :SetIcon(material, true, true, 30)
+            :SetOutline(1)
+            :EnableCornerRadius(true)
+            :SetFitToContentX(true)
+
+        local box4 = layout:Add("TTT2:DPanel")
+        box4:SetSize(200, 50)
+            :SetText(
+                "4 testing text that is way too long to fit here and should extend the size of this panel"
             )
             :SetFont("DermaTTT2Button")
             :SetDescription(
@@ -56,10 +68,10 @@ concommand.Add("vgui_panels_stretch", function()
             :SetOutlineColor(COLOR_GREEN)
             :SetFitToContentY(true)
 
-        local box4 = layout:Add("TTT2:DPanel")
-        box4:SetSize(200, 50)
+        local box5 = layout:Add("TTT2:DPanel")
+        box5:SetSize(200, 50)
             :SetText(
-                "4 testing text that is way too long to fit here and should extend the size of this panel"
+                "5 testing text that is way too long to fit here and should extend the size of this panel"
             )
             :SetFont("DermaTTT2Button")
             :SetDescription(
@@ -72,10 +84,10 @@ concommand.Add("vgui_panels_stretch", function()
             :SetOutlineColor(COLOR_GREEN)
             :SetFitToContentY(true)
 
-        local box5 = layout:Add("TTT2:DPanel")
-        box5:SetSize(200, 50)
+        local box6 = layout:Add("TTT2:DPanel")
+        box6:SetSize(200, 50)
             :SetText(
-                "5 testing text that is way too long to fit here and should extend the size of this panel"
+                "6 testing text that is way too long to fit here and should extend the size of this panel"
             )
             :SetFont("DermaTTT2Button")
             :SetDescription(
@@ -88,10 +100,10 @@ concommand.Add("vgui_panels_stretch", function()
             :SetOutlineColor(COLOR_GREEN)
             :SetFitToContentY(true)
 
-        local box6 = layout:Add("TTT2:DPanel")
-        box6:SetSize(200, 50)
+        local box7 = layout:Add("TTT2:DPanel")
+        box7:SetSize(200, 50)
             :SetText(
-                "6 testing text that is way too long to fit here and should extend the size of this panel"
+                "7 testing text that is way too long to fit here and should extend the size of this panel"
             )
             :SetFont("DermaTTT2Button")
             :SetDescription(
@@ -105,10 +117,10 @@ concommand.Add("vgui_panels_stretch", function()
             :SetFitToContentX(true)
             :SetFitToContentY(true)
 
-        local box7 = layout:Add("TTT2:DPanel")
-        box7:SetSize(200, 150)
+        local box8 = layout:Add("TTT2:DPanel")
+        box8:SetSize(200, 150)
             :SetText(
-                "7 testing text that is way too long to fit here and should extend the size of this panel"
+                "8 testing text that is way too long to fit here and should extend the size of this panel"
             )
             :SetFont("DermaTTT2Button")
             :SetDescription(
@@ -121,10 +133,10 @@ concommand.Add("vgui_panels_stretch", function()
             :SetOutlineColor(COLOR_RED)
             :SetFitToContentX(true)
 
-        local box8 = layout:Add("TTT2:DPanel")
-        box8:SetSize(200, 150)
+        local box9 = layout:Add("TTT2:DPanel")
+        box9:SetSize(200, 150)
             :SetText(
-                "8 testing text that is way too long to fit here and should extend the size of this panel"
+                "9 testing text that is way too long to fit here and should extend the size of this panel"
             )
             :SetFont("DermaTTT2Button")
             :SetDescription(
@@ -137,10 +149,11 @@ concommand.Add("vgui_panels_stretch", function()
             :SetOutlineColor(COLOR_RED)
             :SetFitToContentX(true)
 
-        local box9 = layout:Add("TTT2:DPanel")
-        box9:SetSize(200, 150)
+        local box10 = layout:Add("TTT2:DPanel")
+        box10
+            :SetSize(200, 150)
             :SetText(
-                "9 testing text that is way too long to fit here and should extend the size of this panel"
+                "10 testing text that is way too long to fit here and should extend the size of this panel"
             )
             :SetFont("DermaTTT2Button")
             :SetDescription(
