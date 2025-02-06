@@ -20,7 +20,7 @@ concommand.Add("vgui_panels_more", function()
         box1:SetSize(300, 150)
             :SetTextAlign(TEXT_ALIGN_LEFT, TEXT_ALIGN_TOP)
             :SetDescription(
-                "(align: left, top + fixed size) This is the description of the panel. It should automatically word wrap and extend the size of the panel until everything fits. Let's hope it works!"
+                "(align: left, top + fixed size) This is the description of the panel. It should automatically word wrap. Since this panel has a fixed size, it should not change anything and only respect the text align. Let's hope it works!"
             )
             :SetPadding(10)
             :SetOutline(4, 0)
@@ -30,7 +30,7 @@ concommand.Add("vgui_panels_more", function()
         box2:SetSize(300, 150)
             :SetTextAlign(TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
             :SetDescription(
-                "(align: center, center + fixed size) This is the description of the panel. It should automatically word wrap and extend the size of the panel until everything fits. Let's hope it works!"
+                "(align: center, center + fixed size) This is the description of the panel. It should automatically word wrap. Since this panel has a fixed size, it should not change anything and only respect the text align. Let's hope it works!"
             )
             :SetPadding(10)
             :SetOutline(4, 0)
@@ -40,7 +40,7 @@ concommand.Add("vgui_panels_more", function()
         box3:SetSize(300, 150)
             :SetTextAlign(TEXT_ALIGN_RIGHT, TEXT_ALIGN_BOTTOM)
             :SetDescription(
-                "(align: right, bottom + fixed size) This is the description of the panel. It should automatically word wrap and extend the size of the panel until everything fits. Let's hope it works!"
+                "(align: right, bottom + fixed size) This is the description of the panel. It should automatically word wrap. Since this panel has a fixed size, it should not change anything and only respect the text align. Let's hope it works!"
             )
             :SetPadding(10)
             :SetOutline(4, 0)
