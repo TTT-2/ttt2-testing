@@ -165,9 +165,5 @@ concommand.Add("vgui_panels_stretch", function()
             :SetOutline(1)
             :SetOutlineColor(COLOR_RED)
             :SetFitToContentX(true)
-
-        timer.Simple(0.1, function()
-            layout:InvalidateLayout(true)
-        end)
     end
 end)

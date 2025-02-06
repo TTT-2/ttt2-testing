@@ -72,9 +72,5 @@ concommand.Add("vgui_panels_more", function()
             :SetOutlineColor(COLOR_GREEN)
             :SetFitToContentX(true)
             :SetFitToContentY(true)
-
-        timer.Simple(0.1, function()
-            layout:InvalidateLayout(true)
-        end)
     end
 end)
