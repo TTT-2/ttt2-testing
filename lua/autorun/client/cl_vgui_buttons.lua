@@ -68,5 +68,35 @@ concommand.Add("vgui_buttons", function()
             :EnableCornerRadius(true)
             :SetColor(COLOR_BLUE)
             :SetOutlineColor(COLOR_RED)
+
+        local box10 = layout:Add("TTT2:DButton")
+        box10
+            :SetSize(300, 50)
+            :SetText("testing text")
+            :SetIcon(material, DRAW_SHADOW_ENABLED, DRAW_ICON_SIMPLE, 30)
+            :SetOutline(0, 5, 0, 0)
+            :EnableCornerRadius(true)
+            :SetColor(COLOR_BLUE)
+            :SetOutlineColor(COLOR_RED)
+
+        local box11 = layout:Add("TTT2:DButton")
+        box11
+            :SetSize(300, 50)
+            :SetText("testing text")
+            :SetIcon(material, DRAW_SHADOW_ENABLED, DRAW_ICON_SIMPLE, 30)
+            :SetOutline(0, 0, 5, 0)
+            :EnableCornerRadius(true)
+            :SetColor(COLOR_BLUE)
+            :SetOutlineColor(COLOR_RED)
+
+        local box12 = layout:Add("TTT2:DButton")
+        box12
+            :SetSize(300, 50)
+            :SetText("testing text")
+            :SetIcon(material, DRAW_SHADOW_ENABLED, DRAW_ICON_SIMPLE, 30)
+            :SetOutline(0, 0, 0, 5)
+            :EnableCornerRadius(true)
+            :SetColor(COLOR_BLUE)
+            :SetOutlineColor(COLOR_RED)
     end
 end)
