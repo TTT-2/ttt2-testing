@@ -16,20 +16,20 @@ concommand.Add("vgui_textentry", function()
         layout:SetSpaceX(10)
         layout:SetSpaceY(10)
 
-        local box1 = layout:Add("DTextEntryTTT2")
-        box1:SetSize(300, 50)
-        box1:SetUpdateOnType(false)
-        box1:SetHeightMult(1)
-
-        box1.OnGetFocus = function(slf)
-            util.GetHighestPanelParent(slf):SetKeyboardInputEnabled(true)
-        end
-
-        box1.OnLoseFocus = function(slf)
-            util.GetHighestPanelParent(slf):SetKeyboardInputEnabled(false)
-        end
-
-        -- Set default if possible even if the convar could still overwrite it
-        box1:SetDefaultValue("sdfdsft")
+        local box1 = layout:Add("TTT2:DTextEntry")
+        box1
+            :SetSize(300, 50)
+            :SetText("placeholder text")
+            --:SetIcon(material, DRAW_SHADOW_ENABLED, DRAW_ICON_SIMPLE, 30)
+            :SetOutline(
+                0,
+                0,
+                5,
+                0
+            )
+            :EnableCornerRadius(true)
+            :SetColor(COLOR_BLUE)
+            :SetOutlineColor(COLOR_RED)
+            :SetValue("test input")
     end
 end)
