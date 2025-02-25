@@ -17,19 +17,14 @@ concommand.Add("vgui_textentry", function()
         layout:SetSpaceY(10)
 
         local box1 = layout:Add("TTT2:DTextEntry")
-        box1
-            :SetSize(300, 50)
+        box1:SetSize(300, 50)
             :SetText("placeholder text")
-            --:SetIcon(material, DRAW_SHADOW_ENABLED, DRAW_ICON_SIMPLE, 30)
-            :SetOutline(
-                0,
-                0,
-                5,
-                0
-            )
+            :SetIcon(material, DRAW_SHADOW_ENABLED, DRAW_ICON_SIMPLE, 16)
+            :SetOutline(0, 0, 5, 0)
             :EnableCornerRadius(true)
             :SetColor(COLOR_BLUE)
             :SetOutlineColor(COLOR_RED)
-            :SetValue("test input")
+            :RegisterAutoCompleteEntry("hello world!")
+            :RegisterAutoCompleteEntry("hello borld!")
     end
 end)
